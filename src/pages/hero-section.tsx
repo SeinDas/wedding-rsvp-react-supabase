@@ -2,20 +2,18 @@ import { motion } from 'motion/react';
 import { Heart } from 'lucide-react';
 import { useRef } from 'react';
 
-
 export function HeroSection() {
   const ref = useRef(null);
-
+  
   return (
-    <section ref={ref} id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section ref={ref} id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1765292783735-9ec7213b1df1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwd2VkZGluZyUyMGNlcmVtb255JTIwY291cGxlfGVufDF8fHx8MTc3NjQxODU1OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-          alt="Wedding ceremony"  
+          alt="Wedding ceremony"
           className="w-full h-full object-cover"
         />
-        
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-primary/40" />
       </div>
       
       <div className="relative z-10 text-center px-4 text-white">
@@ -33,8 +31,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          {/* Output the heading here */}
-          A Beautiful Celebration
+          Emma & James
         </motion.h1>
         
         <motion.div
@@ -43,8 +40,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          {/* Output the date here */}
-          December 31, 2026
+          June 15, 2026
         </motion.div>
         
         <motion.p
@@ -53,8 +49,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
         >
-          {/* Output the motto here */}
-          Two hearts, one journey.
+          Join us as we celebrate our love
         </motion.p>
         
         <motion.div
@@ -65,7 +60,7 @@ export function HeroSection() {
         >
           <a
             href="#rsvp"
-            className="inline-block bg-white text-gray-900 px-8 py-4 rounded-full hover:bg-gray-100 transition-colors text-lg"
+            className="inline-block bg-background text-primary px-8 py-4 rounded-full hover:bg-opacity-90 transition-all text-lg font-medium"
           >
             RSVP Now
           </a>

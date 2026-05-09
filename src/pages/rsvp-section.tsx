@@ -29,7 +29,7 @@ export function RsvpSection() {
   };
 
   return (
-    <section ref={ref} id="rsvp" className="py-24 px-4 bg-rose-50">
+    <section ref={ref} id="rsvp" className="py-24 px-4 bg-secondary">
       <div className="max-w-2xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -38,7 +38,7 @@ export function RsvpSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl mb-4 font-serif">RSVP</h2>
-          <div className="w-24 h-1 bg-rose-400 mx-auto mb-6" />
+          <div className="w-24 h-1 bg-primary mx-auto mb-6" />
           <p className="text-gray-700 text-lg">
             Please respond by May 1, 2026
           </p>
@@ -49,7 +49,7 @@ export function RsvpSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
           onSubmit={handleSubmit}
-          className="bg-white p-8 rounded-lg shadow-lg space-y-6"
+          className="bg-background p-8 rounded-lg shadow-lg space-y-6"
         >
           <div>
             <label htmlFor="name" className="block text-sm mb-2 text-gray-700">
@@ -62,7 +62,7 @@ export function RsvpSection() {
               required
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-400"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
             />
           </div>
 
@@ -77,7 +77,7 @@ export function RsvpSection() {
               required
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-400"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
             />
           </div>
 
@@ -91,7 +91,7 @@ export function RsvpSection() {
               required
               value={formData.attendance}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-400"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
             >
               <option value="yes">Joyfully Accept</option>
               <option value="no">Regretfully Decline</option>
@@ -108,7 +108,7 @@ export function RsvpSection() {
               required
               value={formData.guests}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-400"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
             >
               <option value="1">1 Guest</option>
               <option value="2">2 Guests</option>
@@ -127,14 +127,14 @@ export function RsvpSection() {
               rows={3}
               value={formData.dietaryRestrictions}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-400"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
               placeholder="Please let us know of any dietary restrictions..."
             />
           </div>
 
           <button
             type="submit"
-            className="w-full bg-rose-600 text-white py-4 rounded-lg hover:bg-rose-700 transition-colors text-lg flex items-center justify-center gap-2"
+            className="w-full bg-primary text-white py-4 rounded-lg hover:opacity-90 transition-colors text-lg flex items-center justify-center gap-2"
           >
             {submitted ? (
               <>

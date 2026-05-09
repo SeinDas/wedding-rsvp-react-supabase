@@ -2,9 +2,8 @@ import { Helmet } from 'react-helmet-async';
 import { PageHeader } from '@/reusables/page-header';
 import { PageFooter } from '@/reusables/page-footer';
 import { HeroSection } from '@/pages/hero-section';
-import { StorySection } from '@/pages/story-section';
+import { SponsorsSection} from '@/pages/sponsors-section';
 import { DetailsSection } from '@/pages/details-section';
-import { GallerySection } from '@/pages/gallery-section';
 import { RsvpSection } from '@/pages/rsvp-section';
     
 export default function Welcome(
@@ -19,9 +18,8 @@ export default function Welcome(
 
             <PageHeader />
             <HeroSection />
-            <StorySection />
             <DetailsSection />
-            <GallerySection />
+            <SponsorsSection />
             <RsvpSection />
             <PageFooter />
         </>
